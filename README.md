@@ -1,6 +1,6 @@
 # meteo-krig
 
-<img src="/data/Plots/20180515/kfcomb_20180515.mp4?raw=true" class="center" width="1300" height="350">
+<a href="url"><img src="https://gifs.com/gif/91WPyz" align="center" ></a>
 
 This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2020; in Prep). 
 
