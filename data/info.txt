@@ -1,0 +1,33 @@
+###########################
+   Directory Structure
+###########################
+
+Data directories not included in the github repository are available for download here:
+https://drive.google.com/file/d/1_fmKZLU2xQNMwt6SENJBL8bWs3OoSXic/view?usp=sharing. 
+
+Download the archive and unzip the file in the meteo_krig/ directory. The data directory should now contain additional folders (FRK, KF, and Radar). 
+
+Data:
+
+------- FRK - fixed rank kriging
+           5-km kriging analyses of MADIS Research observations.
+
+------- KF - kalman filtered/smoothed
+           3D dataset containing full day of 5-min kriging analyses that have been smoothed using the RTS (kalman) smoother
+           Kalman smoothing was performed using a sliding 2-hour window with an overlap of 1-hour.
+
+------- Kriging - Input and output directories for R kriging example.
+           Input: publicly available MADIS observations (approved for redistribution) within the analysis domain (-105.5 to -70.5 W, 28.5 - 48.5 N)
+           Output: kriging analyses and kriging prediction (standard) error generated using publicly available MADIS observations provided in krig_in
+
+------- METAR - verification observations
+           Selection of three metar stations (one urban, one suburban, one rural) for comparison with madis kriging analyses before and after kalman smoothing
+
+------- Plots - directory storing images and movies of pressure analyses
+
+------- Radar - n0r composite reflectivity
+           3D dataset containing full day of 5-min composite reflectivity analyses with a data resolution of 0.5 dBZ and spatial resolution of ~0.01 decimal degrees
+
+------- Static - ancillary data files
+            hrrr_static -> covariates for LatticeKrig
+            landsea -> land/sea mask for masking pressure analyses over bodies of water
