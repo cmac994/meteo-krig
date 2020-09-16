@@ -12,7 +12,7 @@ The code provided in this repository demonstrates this methodology, wherein pres
 ### Setup
 
 Please read the **SETUP.txt** file before attempting to run the jupyter notebooks provided in this repository. This file contains
-instructions for setting up an R/Python conda environment containing the packages used in jupyter notebooks. In addition, please download the data.tar.gz available here: https://drive.google.com/file/d/1_fmKZLU2xQNMwt6SENJBL8bWs3OoSXic/view?usp=sharing. This archive contains ~1.2 GB of MADIS pressure and radar analyses used in jupyter notebook examples.
+instructions for setting up an R/Python conda environment containing the packages used in jupyter notebooks. In addition, please download the data.tar.gz available [here](https://drive.google.com/file/d/1q418t9YtHSTO01FbQH-eCprvaReaf2XU/view?usp=sharing). This archive contains ~1.2 GB of MADIS pressure and radar analyses used in jupyter notebook examples.
 
 ### Notes about MADIS:
 Additional observations, not available to the public, are provided to researchers under MADIS Research. In McNicholas and Mass (2020; in Prep) MADIS Research observations were used to generate pressure analyses. While the data archive contains pressure analyses generated with MADIS Research observations the raw data (i.e., point observations) are NOT provided. MADIS Research observations cannot be redistributed since they contain Mesonet observations prohibited from redistribution (https://madis.ncep.noaa.gov/madis_restrictions.shtml). For this reason, the data archive, and by extension kriging examples, are limited to MADIS pressure observations approved for public redistribution.
