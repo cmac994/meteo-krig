@@ -1,0 +1,52 @@
+####################
+#### SETUP INFO ####
+####################
+
+To run the jupyter notebooks within this repository a conda installation with an R/Python environment is required.
+If you don't have conda you can download it here: https://docs.conda.io/en/latest/miniconda.html.
+
+------------------------------------------------------------------------------------------------------------------
+
+If you already have conda or have just installed it you can create a new conda environment from the
+meto_krig.yml file included in the repository. This can be accomplished by running:
+
+	conda env create -f meteo_krig.yml
+
+Next activate the environment:
+
+	conda activate meteo_krig
+
+Before you can run the first example notebook (R_LatticeKrig_example.ipynb) you'll need to install
+several R libraries. Type R and click enter to run the R programming language from the terminal. (R is installed as a part of the conda environment created above).
+Run the following command to install R packages necessary to run the R Kriging example.
+
+install.Packages(c("ncdf4","spam64","fields","LatticeKrig"))
+
+Now you can startup jupyter notebook by running:
+
+	jupyter-notebook
+
+This will pull up a browser window. Navigate to the folder notebooks/ and select a notebook to open.
+To run the notebook step-by-step click on the segment and press the play button.
+
+------------------------------------------------------------------------------------------------------------------
+
+Note: before running the notebooks in this repository make sure you've downloaded the data files from
+https://drive.google.com/file/d/1_fmKZLU2xQNMwt6SENJBL8bWs3OoSXic/view?usp=sharing
+
+Once you've downloaded the data unzip the tarfile in the meteo-krig/ directory (i.e. the directory that SETUP.txt is in)
+
+Your directory structure should look as follows:
+
+meteo_krig/
+--- notebooks/
+--- data/
+    --- FRK/
+    --- KF/
+    --- Kriging
+    --- METAR
+    --- Plots
+        --- 20180414
+	--- 20180515
+    --- Radar
+    --- Static
