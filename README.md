@@ -1,8 +1,6 @@
 # meteo-krig
 
-<iframe src='//gifs.com/embed/q71mry' frameborder='0' scrolling='no' width='2600px' height='800px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-
-<img src="https://gifs.com/embed/q71mry" align="center" ></a>
+<img src="https://gifs.com/gif/q71mry" align="center" ></a>
 
 This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2020; in Prep). 
 
