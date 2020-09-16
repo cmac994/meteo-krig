@@ -1,4 +1,4 @@
-# meteo-krig
+## meteo-krig
 
 This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2020; in Prep). 
 
@@ -6,6 +6,7 @@ Multi-resolution kriging (LatticeKrig; Nytcha, 2015) is used to generate 5-km gr
 
 The code provided in this repository demonstrates this methodology, wherein pressure observations are analysed using LatticeKrig, smoothed using a Kalman Smoother, and band pass filtered to extract mesoscale pressure perturbations. In McNicholas and Mass (2020; in Prep) this approach to pressure analyses is extended from MADIS pressure observations to smartphone pressure observations.
 
+### Setup
 
 PLEASE READ the SETUP.txt file before attempting to run the jupyter notebooks provided in this repository. This file contains
 instructinos for setting up an R/Python conda environment containing the packages used in jupyter notebooks. In addition, please download the data.tar.gz avaialble here: https://drive.google.com/file/d/1_fmKZLU2xQNMwt6SENJBL8bWs3OoSXic/view?usp=sharing. This archive contains MADIS pressure observations and analyses used in notebook examples.
@@ -35,5 +36,5 @@ Additional observations, not available to the public, are provided to researcher
       - Pressure perturbation analysis from the Derecho event.
 
 #### References:
-##### Nychka, D., Bandyopadhyay, S., Hammerling, D., Lindgren, F. and Sain, S. (2015). A multiresolution Gaussian process model for the analysis of large spatial datasets. Journal of Computational and Graphical Statistics 24 579–599. https://doi.org/10.1080/10618600.2014.914946.
-##### Nychka, D., Hammerling, D., Sain, S., Lenssen, N., 2016. Latticekrig: Multiresolution kriging based on markov random fields, R package version 8.4. https://github.com/NCAR/LatticeKrig.
+Nychka, D., Bandyopadhyay, S., Hammerling, D., Lindgren, F. and Sain, S. (2015). A multiresolution Gaussian process model for the analysis of large spatial datasets. Journal of Computational and Graphical Statistics 24 579–599. https://doi.org/10.1080/10618600.2014.914946.
+Nychka, D., Hammerling, D., Sain, S., Lenssen, N., 2016. Latticekrig: Multiresolution kriging based on markov random fields, R package version 8.4. https://github.com/NCAR/LatticeKrig.
