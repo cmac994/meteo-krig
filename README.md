@@ -1,4 +1,4 @@
-## meteo-krig
+# meteo-krig
 
 This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2020; in Prep). 
 
