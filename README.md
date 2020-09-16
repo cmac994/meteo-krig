@@ -8,7 +8,7 @@ The code provided in this repository demonstrates this methodology, wherein pres
 
 ### Setup
 
-PLEASE READ the SETUP.txt file before attempting to run the jupyter notebooks provided in this repository. This file contains
+Please read the **SETUP.txt** file before attempting to run the jupyter notebooks provided in this repository. This file contains
 instructinos for setting up an R/Python conda environment containing the packages used in jupyter notebooks. In addition, please download the data.tar.gz avaialble here: https://drive.google.com/file/d/1_fmKZLU2xQNMwt6SENJBL8bWs3OoSXic/view?usp=sharing. This archive contains MADIS pressure observations and analyses used in notebook examples.
 
 ### Notes about MADIS:
@@ -16,20 +16,20 @@ Additional observations, not available to the public, are provided to researcher
 
 #### Notebooks
 
-- R_LatticeKrig_example.ipynb
+- *R_LatticeKrig_example.ipynb*
    - Demonstrates use of LatticeKrig R package for interpolating in situ pressure observations from MADIS to a 5-km grid.
 
-- LatticeKrig_Analysis.ipynb 
+- *LatticeKrig_Analysis.ipynb*
    - Visualization of LatticeKrig analyses produced in R_LatticeKrig_example.ipynb. Includes comparison between analysis generated
    using MADIS Research observations (used in paper) and publicly available MADIS observations (included in the repository)
 
-- LatticeKrig_Kalman_Smoothing.ipynb
+- *LatticeKrig_Kalman_Smoothing.ipynb*
    - Shows how Kalman smoothing is used to transform 5-min pressure analyses, generated individually with LatticeKrig, into 
    spatio-temporal pressure analyses by smoothing windowed time-series at each grid point in the domain.
    Comparison to METAR observations is provided for a selection of three sites (one urban, one suburban, and one rural).
    Kalman Smoothing has a minimal impact on absolute accuracy, but greatly improves relative accuracy which is important for pressure perturbation analysis
 
-- LatticeKrig_KF_Analysis
+- *LatticeKrig_KF_Analysis.ipynb*
    - Examples showing the end result of kriging and Kalman smoothing. 
       - Synoptic pressure analyses from 04/14/18 showing a low pressure system propagating across the Central U.S.
       - Pressure analyses and Composite Reflectivity from Derecho event in the Mid-Atlantic (05/15/18).
