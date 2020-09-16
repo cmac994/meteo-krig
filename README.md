@@ -20,22 +20,22 @@ Additional observations, not available to the public, are provided to researcher
 #### Notebooks
 
 - *R_LatticeKrig_example.ipynb*
-   - Demonstrates use of LatticeKrig R package for interpolating in situ pressure observations from MADIS to a 5-km grid.
+   - Demonstrates the use of the LatticeKrig R package for interpolating *in situ* pressure observations from MADIS onto a 5-km regular grid.
 
 - *LatticeKrig_Analysis.ipynb*
    - Visualization of LatticeKrig analyses produced in R_LatticeKrig_example.ipynb. Includes comparison between analysis generated
-   using MADIS Research observations (used in paper) and publicly available MADIS observations (included in the repository)
+   using MADIS Research observations and publicly available MADIS observations
 
 - *LatticeKrig_Kalman_Smoothing.ipynb*
    - Shows how Kalman smoothing is used to transform 5-min pressure analyses, generated individually with LatticeKrig, into 
    spatio-temporal pressure analyses by smoothing windowed time-series at each grid point in the domain.
-   Comparison to METAR observations is provided for a selection of three sites (one urban, one suburban, and one rural).
+   A comparison to METAR observations is provided at three sites (one urban, one suburban, and one rural).
    Kalman Smoothing has a minimal impact on absolute accuracy, but greatly improves relative accuracy which is important for pressure perturbation analysis
 
 - *LatticeKrig_KF_Analysis.ipynb*
    - Examples showing the end result of kriging and Kalman smoothing. 
       - Synoptic pressure analyses from 04/14/18 showing a low pressure system propagating across the Central U.S.
-      - Pressure analyses and Composite Reflectivity from Derecho event in the Mid-Atlantic (05/15/18).
+      - Pressure analyses and composite Reflectivity from Derecho event in the Mid-Atlantic (05/15/18).
       - Pressure perturbation analysis from the Derecho event.
 
 #### References:
