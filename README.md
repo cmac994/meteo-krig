@@ -1,14 +1,12 @@
 # meteo-krig
 
-<img src="/data/Plots/20180515/altimeter.gif?raw=true" class="center">
+<img src="/data/Plots/20180515/altimeter_derecho.gif?raw=true" class="center">
 
 This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2020; in Prep). 
 
 Multi-resolution kriging (LatticeKrig; Nytcha, 2015) is used to generate 5-km gridded analyses of sea level pressure (altimeter), every 5-minutes. These analyses are generated using MADIS pressure observations. To account for the temporal variability of observation density/frequency of MADIS, Kalman smoothing is performed. Kalman smoothing transforms geo-spatial pressure analyses, generate with LatticeKrig (Nychka et al., 2015), into spatio-temporal pressure analyses that are consistent in both space and time. 
 
 The code provided in this repository demonstrates this methodology, wherein pressure observations are analysed using LatticeKrig, smoothed using a Kalman Smoother, and band pass filtered to extract mesoscale pressure perturbations. In McNicholas and Mass (2020; in Prep) this approach to pressure analyses is extended from MADIS pressure observations to smartphone pressure observations.
-
-<a href="url"><img src="https://atmos.washington.edu/~cmcnich/meteo_krig/altimeter_derecho.png" align="center"></a>
 
 ### Setup
 
