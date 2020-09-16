@@ -1,20 +1,13 @@
 # meteo-krig
 
 	This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2020; in Prep). More specifically, multi-resolution kriging (LatticeKrig; Nytcha, 2015) is used to generate 5-km gridded analyses of sea level pressure (altimeter), every 5-minutes.
-These analyses are generated using MADIS pressure observations. To account for the temporal variability of observation density/frequency of MADIS, Kalman smoothing is performed.
-Kalman smoothing transforms geo-spatial pressure analyses, generated indepentlty by LatticeKrig, into spatio-temporal pressure analyses that are consistent in both space and time.
-The code provided in this repository demonstrates this methodology, wherein pressure observations are analysed using LatticeKrig, smoothed using a Kalman Smoother, and band pass filtered
-to extract mesoscale pressure perturbations. In McNicholas and Mass (2020) this approach to pressure analyses is extended from MADIS observations to smartphone pressure observations
+These analyses are generated using MADIS pressure observations. To account for the temporal variability of observation density/frequency of MADIS, Kalman smoothing is performed. Kalman smoothing transforms geo-spatial pressure analyses, generated indepently by LatticeKrig (Nychka et al., 2015), into spatio-temporal pressure analyses that are consistent in both space and time. The code provided in this repository demonstrates this methodology, wherein pressure observations are analysed using LatticeKrig, smoothed using a Kalman Smoother, and band pass filtered to extract mesoscale pressure perturbations. In McNicholas and Mass (2020; in Prep) this approach to pressure analyses is extended from MADIS pressure observations to smartphone pressure observations
+
+PLEASE READ the SETUP.txt file before attempting to run the jupyter notebooks provided in this repository. This file contains
+instructinos for setting up an R/Python conda environment containing the packages used in jupyter notebooks. In addition, please download the data.tar.gz avaialble here: https://drive.google.com/file/d/1_fmKZLU2xQNMwt6SENJBL8bWs3OoSXic/view?usp=sharing. This archive contains MADIS pressure observations and analyses used in notebook examples.
 
 ## Notes about MADIS:
-	MADIS observations are publicly accessible here. Additional observations, not available to the public, are provided to researchers under MADIS Research.
-In McNicholas and Mass (2020) MADIS Research observations are used to generate pressure analyses. In this repository only analyses generated with MADIS Research
-observations are provided. MADIS Research observations cannot be redistributed since they contain Mesonet observations prohibited from redistribution (citation).
-Consequently, MADIS (Public) observations are provided in this repository, in the kriging example, since these observations may be redistributed.
-
-PLEASE READ the SETUP.txt file before attempting to run the jupyter notebooks provided in this repository.
-Also, be sure to download the ~2GB data.tar.gz file linked below. This file contains data used in notebook examples.
-
+Additional observations, not available to the public, are provided to researchers under MADIS Research. In McNicholas and Mass (2020; in Prep) MADIS Research observations were used to generate pressure analyses. While the data archive contains pressure analyses generated with MADIS Research observations the raw data (i.e., point observations) are NOT provided. MADIS Research observations cannot be redistributed since they contain Mesonet observations prohibited from redistribution (https://madis.ncep.noaa.gov/madis_restrictions.shtml). For this reason, the data archive, and by extension kriging examples, are limited to MADIS pressure observations approved for public redistribution.
 
 ## Directory Structure
 
