@@ -1,6 +1,6 @@
 # meteo-krig
 
-<a href="url"><img src="https://atmos.washington.edu/~cmcnich/meteo_krig/altimeter_derecho.png" align="center"></a>
+<a href="url"><img src="https://atmos.washington.edu/~cmcnich/meteo_krig/altimeter.gif" align="center"></a>
 
 This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2020; in Prep). 
 
