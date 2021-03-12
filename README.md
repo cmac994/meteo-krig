@@ -53,7 +53,9 @@ Additional observations, not available to the public, are provided to researcher
    - [CaseI](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/CaseStudies/CaseI/): Long-lived Mesoscale Convective System 
    - [CaseII](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/CaseStudies/CaseII/): Landfall of Hurricane Michael
    - [CaseIII](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/CaseStudies/CaseIII/): Atmospheric Gravity Wave
-     
+   
+   Case Study Notebooks
+   
    - *Perturbation Analysis*
       - Show hybrid objective analysis displaying MADIS observations overlayed with pressure contours from smartphone analyes and temperature/dew point contours from MADIS 
       anlyses during the case study event.
