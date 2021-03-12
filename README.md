@@ -19,13 +19,13 @@ instructions for setting up an R/Python conda environment containing the package
 ### Notes about MADIS:
 Additional observations, not available to the public, are provided to researchers by the Meteorological Data Assimilation Ingest System ([MADIS](https://madis.ncep.noaa.gov/)). In McNicholas and Mass (2020), MADIS Research observations were used to generate pressure analyses. The data archive contains pressure analyses generated with MADIS Research observations but not the raw data (i.e., point observations). MADIS Research observations cannot be redistributed since they contain Mesonet observations [prohibited](https://madis.ncep.noaa.gov/madis_restrictions.shtml) from redistribution. For this reason, point-observations in the data archive are limited to MADIS pressure observations approved for public release.
 
-#### Notebooks
+#### [Notebooks](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/)
 
-- *Surface Analysis*
-   - Kriging   
+- [*Surface Analysis*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/SurfaceAnalysis/)
+   - [Kriging](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/SurfaceAnalysis/Kriging/)   
       - Demonstrates the use of the LatticeKrig R package for interpolating *in situ* surface observations from MADIS onto a 5-km regular grid.
 
-   - RTS_Analysis
+   - [RTS_Analysis](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/SurfaceAnalysis/RTS_Analysis/)
       - Shows how Kalman smoothing is used to transform 5-min pressure analyses, generated individually with LatticeKrig, into 
       spatio-temporal pressure analyses by smoothing windowed time-series at each grid point in the domain.
       A comparison to METAR observations is provided at three sites (one urban, one suburban, and one rural).
@@ -33,32 +33,33 @@ Additional observations, not available to the public, are provided to researcher
       - Provides examples for pressure, temperature, moisture, and wind which show the end result of kriging and Kalman smoothing. A comparison between surface analyses   
       generated using MADIS Research observations and publicly available MADIS observations is also performed.
 
-   - *SurfaceAnalysis.ipynb*
+   - [*SurfaceAnalysis.ipynb*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/blob/master/notebooks/SurfaceAnalysis/Surface_Analysis.ipynb)
       -  Combines smarpthone pressure analyses with composite reflectivity and MADIS analyses of temperature, mositure, and wind to create gridded objective analyses.
       -  Demonstrates how mesoscale temperature, moisture, and wind perturbations are extracted from MADIS analyses using band-pass filtering. 
       -  Produces animations depicting the evolution of mesoscale perturbations associated with two high-impact weather events in the Mid-Atlantic region between 14-15 May 2018.
 
-- *Feature Tracking*
-   - *Pressure_Perturbation_Analysis.ipynb*
+- [*Feature Tracking*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/FeatureTracking/)
+   - [*Pressure_Perturbation_Analysis.ipynb*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/blob/master/notebooks/FeatureTracking/Pressure_Perturbation_Analysis.ipynb)
       - Reveals how mesoscale pressure perturbations are extracted from smartphone pressure analyses using band-pass filtering. Composite reflectivity is shown beside 
-      altimeter analysis and band-pass filtered (mesoscale) pressure perturbations to show how smartphone analyses captured convective phenomena during the 14-15 May derecho event.
+      altimeter analysis and band-pass filtered (mesoscale) pressure perturbations to show how smartphone analyses captured convective phenomena during the 14-15 May derecho 
+      event.
 
-   - *Perturbation_Tracking*   
+   - [*Perturbation_Tracking*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/blob/master/notebooks/FeatureTracking/Perturbation_Tracking.ipynb)   
       - Perform feature tracking of mesoscale pressure perturbations using [scikit-image](https://github.com/scikit-image/scikit-image), [hagelsag]
       (https://github.com/djgagne/hagelslag), and [trackpy](https://github.com/soft-matter/trackpy).
       - Illustrates feature tracking by animating feature tracks overlaid atop mesoscale pressure perturbations during the 14-15 May derecho event.
 
-- *Case Studies*
-   - CaseI: Long-lived Mesoscale Convective System 
-   - CaseII: Landfall of Hurricane Michael
-   - CaseIII: Atmospheric Gravity Wave
+- [*Case Studies*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/CaseStudies/)
+   - [CaseI](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/CaseStudies/CaseI/): Long-lived Mesoscale Convective System 
+   - [CaseII](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/CaseStudies/CaseII/): Landfall of Hurricane Michael
+   - [CaseIII](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/CaseStudies/CaseIII/): Atmospheric Gravity Wave
      
-   *Perturbation_Analysis*
+   *Perturbation Analysis*
       - Show hybrid objective analysis displaying MADIS observations overlayed with pressure contours from smartphone analyes and temperature/dew point contours from MADIS anlayses during the case study event.
       - Display gridded surface analysis using smartphone pressure analyses and MADIS analyses of temperature, dew point, and wind.
       - Plot mesoscale surface perturbation analyses derived from band-passed filtered smartphone pressure analyses and MADIS analyses of temperature, dew point, and wind.
       
-   *Composite_and_Wavelet_Analysis*
+   *Composite and Wavelet_Analysis*
       - Define Methodological functions for band pass filtering, feature tracking, cross-correlation lag analysis, beamsteering, and wavelet analysis
       - Retrieve and plot composite analyses of pressure, temperature, humidity, and wave-normal wind perturbations for given case study
       - Demonstrate how cross-correlation lag analysis and beamsteering are used to estimate phase speed and wave-normal wind components.
