@@ -5,11 +5,9 @@
 
 This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2021a; in review) and McNicholas and Mass (2021b; in prep). 
 
-*McNicholas and Mass (2021a)*
-
 Multi-resolution kriging (LatticeKrig; Nychka et al., 2015) is used to generate 5-km gridded analyses of sea level pressure (altimeter), every 5-minutes. These analyses are generated using [MADIS](https://madis.ncep.noaa.gov/madis_sfc.shtml) pressure observations, which include pressure observations from [METARs](https://madis.ncep.noaa.gov/madis_metar.shtml) and [Mesonets](https://madis.ncep.noaa.gov/madis_mesonet.shtml). To account for the temporal variability of MADIS observation density/frequency, Kalman smoothing is performed. Kalman smoothing transforms geo-spatial pressure analyses, generated with LatticeKrig, into spatio-temporal pressure analyses that are consistent in both space and time. 
 
-The code provided in this repository demonstrates this methodology, wherein pressure observations are analysed using LatticeKrig, smoothed using a Kalman Smoother, and band pass filtered to extract mesoscale pressure perturbations. In McNicholas and Mass (2020) this approach to pressure analyses is extended from MADIS pressure observations to smartphone pressure observations.
+The code provided in this repository demonstrates this methodology, wherein pressure observations are analysed using LatticeKrig, smoothed using a Kalman Smoother, and band pass filtered to extract mesoscale pressure perturbations. In McNicholas and Mass (2021a; in review) this approach to pressure analyses is extended from MADIS pressure observations to smartphone pressure observations. McNicholas and Mass (2021b; in prep), this methodology is extended to MADIS temperature, moisture, and wind observations facilliting the analysis, tracking, and characterization of mesoscale pressure features. 
 
 ### Setup
 
