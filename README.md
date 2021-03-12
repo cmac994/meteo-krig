@@ -1,7 +1,7 @@
 # meteo-krig
 
 
-<img width="1680" height="280" src="data/Plots/20180515/altimeter_derecho.gif">
+<img width="1680" height="280" src="Plots/20180515/kfpert_caseI.mp4">
 
 This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2020). 
 
