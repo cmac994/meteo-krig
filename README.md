@@ -35,8 +35,35 @@ Additional observations, not available to the public, are provided to researcher
 
    - *SurfaceAnalysis.ipynb*
       -  Combines smarpthone pressure analyses with composite reflectivity and MADIS analyses of temperature, mositure, and wind to create gridded objective analyses.
-      -  Demonstrates how mesoscale temperature, moisture, and wind perturbations are extracted from gridded analyses using band-pass filtering. 
-      -  Produces animations depicting the evolution of mesoscale pressure perturbations associated with a convective event (Derecho) in the Mid-Atlantic region.
+      -  Demonstrates how mesoscale temperature, moisture, and wind perturbations are extracted from MADIS analyses using band-pass filtering. 
+      -  Produces animations depicting the evolution of mesoscale perturbations associated with two high-impact weather events in the Mid-Atlantic region between 14-15 May 2018.
+
+- *Feature Tracking*
+   - *Pressure_Perturbation_Analysis.ipynb*
+      - Reveals how mesoscale pressure perturbations are extracted from smartphone pressure analyses using band-pass filtering. Composite reflectivity is shown beside 
+      altimeter analysis and band-pass filtered (mesoscale) pressure perturbations to show how smartphone analyses captured convective phenomena during the 14-15 May derecho event.
+
+   - *Perturbation_Tracking*   
+      - Perform feature tracking of mesoscale pressure perturbations using [scikit-image](https://github.com/scikit-image/scikit-image), [hagelsag]
+      (https://github.com/djgagne/hagelslag), and [trackpy](https://github.com/soft-matter/trackpy).
+      - Illustrates feature tracking by animating feature tracks overlaid atop mesoscale pressure perturbations during the 14-15 May derecho event.
+
+- *Case Studies*
+   - CaseI: Long-lived Mesoscale Convective System 
+   - CaseII: Landfall of Hurricane Michael
+   - CaseIII: Atmospheric Gravity Wave
+     
+   *Perturbation_Analysis*
+      - Show hybrid objective analysis displaying MADIS observations overlayed with pressure contours from smartphone analyes and temperature/dew point contours from MADIS anlayses during the case study event.
+      - Display gridded surface analysis using smartphone pressure analyses and MADIS analyses of temperature, dew point, and wind.
+      - Plot mesoscale surface perturbation analyses derived from band-passed filtered smartphone pressure analyses and MADIS analyses of temperature, dew point, and wind.
+      
+   *Composite_and_Wavelet_Analysis*
+      - Define Methodological functions for band pass filtering, feature tracking, cross-correlation lag analysis, beamsteering, and wavelet analysis
+      - Retrieve and plot composite analyses of pressure, temperature, humidity, and wave-normal wind perturbations for given case study
+      - Demonstrate how cross-correlation lag analysis and beamsteering are used to estimate phase speed and wave-normal wind components.
+      - Perform wavelet analysis and cross wavelet analysis to evaluate multi-scale relationships between pressure, temperature, humidity, and wind perturbations. Calculate and 
+      display wavelet cross correlation, coherence, and phase at all feature track points and at the dominant scale of the observed pressure feature
 
 #### References:
 
