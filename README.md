@@ -54,12 +54,13 @@ Additional observations, not available to the public, are provided to researcher
    - [CaseII](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/CaseStudies/CaseII/): Landfall of Hurricane Michael
    - [CaseIII](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/CaseStudies/CaseIII/): Atmospheric Gravity Wave
      
-   *Perturbation Analysis*
-      - Show hybrid objective analysis displaying MADIS observations overlayed with pressure contours from smartphone analyes and temperature/dew point contours from MADIS anlayses during the case study event.
+   - *Perturbation Analysis*
+      - Show hybrid objective analysis displaying MADIS observations overlayed with pressure contours from smartphone analyes and temperature/dew point contours from MADIS 
+      anlyses during the case study event.
       - Display gridded surface analysis using smartphone pressure analyses and MADIS analyses of temperature, dew point, and wind.
       - Plot mesoscale surface perturbation analyses derived from band-passed filtered smartphone pressure analyses and MADIS analyses of temperature, dew point, and wind.
-      
-   *Composite and Wavelet_Analysis*
+
+   - *Composite and Wavelet_Analysis*
       - Define Methodological functions for band pass filtering, feature tracking, cross-correlation lag analysis, beamsteering, and wavelet analysis
       - Retrieve and plot composite analyses of pressure, temperature, humidity, and wave-normal wind perturbations for given case study
       - Demonstrate how cross-correlation lag analysis and beamsteering are used to estimate phase speed and wave-normal wind components.
