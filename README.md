@@ -3,7 +3,9 @@
 
 <img width="1680" height="280" src="Plots/20180515/kfalts_20180515.gif">
 
-This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2020). 
+This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2021a; in review) and McNicholas and Mass (2021b; in prep). 
+
+*McNicholas and Mass (2021a)*
 
 Multi-resolution kriging (LatticeKrig; Nychka et al., 2015) is used to generate 5-km gridded analyses of sea level pressure (altimeter), every 5-minutes. These analyses are generated using [MADIS](https://madis.ncep.noaa.gov/madis_sfc.shtml) pressure observations, which include pressure observations from [METARs](https://madis.ncep.noaa.gov/madis_metar.shtml) and [Mesonets](https://madis.ncep.noaa.gov/madis_mesonet.shtml). To account for the temporal variability of MADIS observation density/frequency, Kalman smoothing is performed. Kalman smoothing transforms geo-spatial pressure analyses, generated with LatticeKrig, into spatio-temporal pressure analyses that are consistent in both space and time. 
 
@@ -19,27 +21,28 @@ Additional observations, not available to the public, are provided to researcher
 
 #### Notebooks
 
-- *R_LatticeKrig_example.ipynb*
-   - Demonstrates the use of the LatticeKrig R package for interpolating *in situ* pressure observations from MADIS onto a 5-km regular grid.
+- *Surface Analysis*
+   - Kriging   
+      - Demonstrates the use of the LatticeKrig R package for interpolating *in situ* surface observations from MADIS onto a 5-km regular grid.
 
-- *LatticeKrig_Analysis.ipynb*
-   - Visualization of LatticeKrig analyses produced in R_LatticeKrig_example.ipynb. Includes comparison between analysis generated
-   using MADIS Research observations and publicly available MADIS observations
+   - RTS_Analysis
+      - Shows how Kalman smoothing is used to transform 5-min pressure analyses, generated individually with LatticeKrig, into 
+      spatio-temporal pressure analyses by smoothing windowed time-series at each grid point in the domain.
+      A comparison to METAR observations is provided at three sites (one urban, one suburban, and one rural).
+      Kalman Smoothing has a minimal impact on absolute accuracy, but greatly improves relative accuracy which is important for pressure perturbation analysis
+      - Provides examples for pressure, temperature, moisture, and wind which show the end result of kriging and Kalman smoothing. A comparison between surface analyses   
+      generated using MADIS Research observations and publicly available MADIS observations is also performed.
 
-- *LatticeKrig_Kalman_Smoothing.ipynb*
-   - Shows how Kalman smoothing is used to transform 5-min pressure analyses, generated individually with LatticeKrig, into 
-   spatio-temporal pressure analyses by smoothing windowed time-series at each grid point in the domain.
-   A comparison to METAR observations is provided at three sites (one urban, one suburban, and one rural).
-   Kalman Smoothing has a minimal impact on absolute accuracy, but greatly improves relative accuracy which is important for pressure perturbation analysis
-
-- *LatticeKrig_KF_Analysis.ipynb*
-   - Examples showing the end result of kriging and Kalman smoothing. 
-      - Synoptic pressure analyses from 04/14/18 showing a low pressure system propagating across the Central U.S.
-      - Pressure analyses and composite Reflectivity from Derecho event in the Mid-Atlantic (05/15/18).
-      - Pressure perturbation analysis from the Derecho event.
+   - *SurfaceAnalysis.ipynb*
+      -  Combines smarpthone pressure analyses with composite reflectivity and MADIS analyses of temperature, mositure, and wind to create gridded objective analyses.
+      -  Demonstrates how mesoscale temperature, moisture, and wind perturbations are extracted from gridded analyses using band-pass filtering. 
+      -  Produces animations depicting the evolution of mesoscale pressure perturbations associated with a convective event (Derecho) in the Mid-Atlantic region.
 
 #### References:
-McNicholas, C., C. Mass, 2020: Bias Correction, Anonymization, and Analysis of Smartphone Pressure Observations with Machine Learning and Multi-Resolution Kriging. *Journal of Weather and Forecasting*, (submitted).
+
+McNicholas, C., C. Mass, 2020a: Bias Correction, Anonymization, and Analysis of Smartphone Pressure Observations with Machine Learning and Multi-Resolution Kriging. *Journal of Weather and Forecasting*, (submitted).
+
+McNicholas, C., C. Mass, 2020b: Tracking, Classification, and Analysis of Mesoscale Pressure Phenomena observed by Smartphones. (in prep).
 
 Nychka, D., Bandyopadhyay, S., Hammerling, D., Lindgren, F. and Sain, S. (2015). A multiresolution Gaussian process model for the analysis of large spatial datasets. *Journal of Computational and Graphical Statistics* 24 579–599. https://doi.org/10.1080/10618600.2014.914946.
 
