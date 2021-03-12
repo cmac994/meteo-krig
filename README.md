@@ -1,7 +1,7 @@
 # meteo-krig
 
 
-<img width="1680" height="280" src="Plots/20180515/alts.gif">
+<img width="1680" height="280" src="Plots/20180515/kfalts_20180515.gif">
 
 This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2020). 
 
