@@ -65,7 +65,7 @@ Additional observations, not available to the public, are provided to researcher
       - A comparison between smartphone and madis pressure feature climatologies is explored through stastical analysis of a 1-year pressure feature climatology spanning the central and eastern U.S.
       - The seasonal, diurnal, and geographic variation of surface pressure features is examined. Furthermore, their environment (with respect to precipitation/convection) and (phase and propagation) velocity is examined. 
 
-   - [*Composite and Wavelet Analysis*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/blob/master/notebooks/CaseStudies/CaseI/CaseI_MCS_Composite_and_Wavelet_Analysis.ipynb)
+   - [*Smartphone Feature Composites*](https://nbviewer.org/github/cmac994/meteo-krig/blob/master/notebooks/Results/Smartphone_Composites.ipynb)
       - An analysis of the temporal and spatial composites of smartphone pressure features is performed for both positive and negative features.
       - Phase relationships between mesoscale surface pressure perturbations and other surface variables (e.g. temperature, dew point, wind) are examined.
 
