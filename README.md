@@ -1,6 +1,6 @@
 # meteo-krig
 
-<img width="1680" height="320" src="Plots/Analysis/pressure_tracks.gif">
+<img width="1680" height="280" src="Plots/Analysis/pressure_tracks.gif">
 
 This repository provides code and example visualizations of techniques and results from [McNicholas and Mass (2021a)](https://doi.org/10.1175/WAF-D-20-0222.1) and McNicholas and Mass (2021b; submitted). 
 
