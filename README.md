@@ -3,7 +3,7 @@
 
 <img width="1680" height="280" src="Plots/20180515/kfalts_20180515.gif">
 
-This repository provides code and example visualizations of techniques used in the methodology of McNicholas and Mass (2021a; in review) and McNicholas and Mass (2021b; in prep). 
+This repository provides code and example visualizations of techniques used in the methodology of [McNicholas and Mass (2021a)](https://doi.org/10.1175/WAF-D-20-0222.1) and McNicholas and Mass (2021b; in prep). 
 
 Multi-resolution kriging (LatticeKrig; Nychka et al., 2015) is used to generate 5-km gridded analyses of sea level pressure (altimeter), every 5-minutes. These analyses are generated using [MADIS](https://madis.ncep.noaa.gov/madis_sfc.shtml) pressure observations, which include pressure observations from [METARs](https://madis.ncep.noaa.gov/madis_metar.shtml) and [Mesonets](https://madis.ncep.noaa.gov/madis_mesonet.shtml). To account for the temporal variability of MADIS observation density/frequency, Kalman smoothing is performed. Kalman smoothing transforms geo-spatial pressure analyses, generated with LatticeKrig, into spatio-temporal pressure analyses that are consistent in both space and time. 
 
@@ -67,7 +67,7 @@ Additional observations, not available to the public, are provided to researcher
 
 #### References:
 
-McNicholas, C., & Mass, C. F. (2021a). Bias Correction, Anonymization, and Analysis of Smartphone Pressure Observations Using Machine Learning and Multiresolution Kriging, Weather and Forecasting, 36(5), 1867-1889. Retrieved Oct 8, 2021, from https://journals.ametsoc.org/view/journals/wefo/36/5/WAF-D-20-0222.1.xml
+McNicholas, C., & Mass, C. F. (2021a). Bias Correction, Anonymization, and Analysis of Smartphone Pressure Observations Using Machine Learning and Multiresolution Kriging, Weather and Forecasting, 36(5), 1867-1889. Retrieved Oct 8, 2021, doi: https://doi.org/10.1175/WAF-D-20-0222.1
 
 McNicholas, C., & Mass, C. F. (2021b): A Comparison of Mesoscale Pressure Features Observed with Smartphones and Conventional Observations. *Journal of Weather and Forecasting*, (submitted).
 
