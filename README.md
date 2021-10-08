@@ -67,9 +67,9 @@ Additional observations, not available to the public, are provided to researcher
 
 #### References:
 
-McNicholas, C., C. Mass, 2021a: Bias Correction, Anonymization, and Analysis of Smartphone Pressure Observations with Machine Learning and Multi-Resolution Kriging. *Journal of Weather and Forecasting*, (submitted).
+McNicholas, C., & Mass, C. F. (2021a). Bias Correction, Anonymization, and Analysis of Smartphone Pressure Observations Using Machine Learning and Multiresolution Kriging, Weather and Forecasting, 36(5), 1867-1889. Retrieved Oct 8, 2021, from https://journals.ametsoc.org/view/journals/wefo/36/5/WAF-D-20-0222.1.xml
 
-McNicholas, C., C. Mass, 2021b: Tracking, Classification, and Analysis of Mesoscale Pressure Phenomena observed by Smartphones. (in prep).
+McNicholas, C., & Mass, C. F. (2021b): A Comparison of Mesoscale Pressure Features Observed with Smartphones and Conventional Observations. *Journal of Weather and Forecasting*, (submitted).
 
 Nychka, D., Bandyopadhyay, S., Hammerling, D., Lindgren, F. and Sain, S. (2015). A multiresolution Gaussian process model for the analysis of large spatial datasets. *Journal of Computational and Graphical Statistics* 24 579–599. https://doi.org/10.1080/10618600.2014.914946.
 
