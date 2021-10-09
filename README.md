@@ -38,6 +38,8 @@ Additional observations, not available to the public, are provided to researcher
          -  Demonstrates how mesoscale temperature, moisture, and wind perturbations are extracted from MADIS analyses using band-pass filtering. 
          -  Produces animations depicting the evolution of mesoscale perturbations associated with two high-impact weather events in the Mid-Atlantic region between 14-15 May 2018.
 
+   #### *Paper II: McNicholas and Mass (2021b)*
+   
    - [*Feature Tracking*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/Methodology/Feature_Tracking/)
       - [*Pressure_Perturbation_Analysis.ipynb*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/blob/master/notebooks/Methodology/Feature_Tracking/Pressure_Perturbation_Analysis.ipynb)
          - Reveals how mesoscale pressure perturbations are extracted from smartphone pressure analyses using band-pass filtering. Composite reflectivity is shown beside 
@@ -48,9 +50,7 @@ Additional observations, not available to the public, are provided to researcher
          - Perform feature tracking of mesoscale pressure perturbations using [scikit-image](https://github.com/scikit-image/scikit-image), [hagelsag]
          (https://github.com/djgagne/hagelslag), and [trackpy](https://github.com/soft-matter/trackpy).
          - Illustrates feature tracking by animating feature tracks overlaid atop mesoscale pressure perturbations during the 14-15 May derecho event.
-        
-   #### *Paper II: McNicholas and Mass (2021b)*
-   
+           
    - [*Analysis*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/FeatureTracking/)
       - [*Bandpass_Filtering.ipynb*](https://nbviewer.org/github/cmac994/meteo-krig/blob/master/notebooks/Methodology/Analysis/Bandpass_Filtering.ipynb?flush_cache=False)
          - Utilizes a case-study of a squall line in May 2018, from McNicholas and Mass (2021b), to demonstrate the creation of surface analyses and mesoscale perturbation analyses using smartphone and MADIS observations. Pressure feature identification and tracking is also examplified for the squall line case. A comparison is made between the mesoscale pressure feature observed by smartphones and MADIS
