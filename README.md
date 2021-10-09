@@ -52,7 +52,7 @@ Additional observations, not available to the public, are provided to researcher
    #### *Paper II: McNicholas and Mass (2021b)*
    
    - [*Analysis*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/FeatureTracking/)
-      - [*Bandpass_Filtering.ipynb*](https://nbviewer.org/github/cmac994/meteo-krig/blob/master/notebooks/Methodology/Analysis/Bandpass_Filtering.ipynb)
+      - [*Bandpass_Filtering.ipynb*](https://nbviewer.org/github/cmac994/meteo-krig/blob/master/notebooks/Methodology/Analysis/Bandpass_Filtering.ipynb?flush_cache=False)
          - Utilizes a case-study of a squall line in May 2018, from McNicholas and Mass (2021b), to demonstrate the creation of surface analyses and mesoscale perturbation analyses using smartphone and MADIS observations. Pressure feature identification and tracking is also examplified for the squall line case. A comparison is made between the mesoscale pressure feature observed by smartphones and MADIS
       - [*Composite_Analysis.ipynb*](https://nbviewer.org/github/cmac994/meteo-krig/blob/master/notebooks/Methodology/Analysis/Composite_Analysis.ipynb)   
          - The compositing of a mesoscale pressure feature is demonstrated for the squall-line case of McNicholas and Mass (2021b). Cross-correlation lag-analysis and beamsteering techniques are examined to estimate the phase propagation of pressure features and to calculate the feature normal wind ([Nappo, 2013](https://ebookcentral.proquest.com/lib/washington/detail.action?docID=1042788)). Lastly, cross-spectral analysis is performed to estimate to examine the relationship between perturbation pressure and feature normal wind. 
