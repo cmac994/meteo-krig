@@ -1,6 +1,8 @@
 # meteo-krig
 
-This repository provides code and example visualizations of techniques and results from [McNicholas and Mass (2021a)](https://doi.org/10.1175/WAF-D-20-0222.1) and McNicholas and Mass (2021b; submitted). 
+<img width="1680" height="280" src="Plots/Analysis/pressure_tracks.gif">
+
+This repository provides code and visualizations of methods/results from [McNicholas and Mass (2021a)](https://doi.org/10.1175/WAF-D-20-0222.1) and McNicholas and Mass (2021b; submitted). 
 
 In [McNicholas and Mass (2021a)](https://doi.org/10.1175/WAF-D-20-0222.1) multi-resolution kriging (LatticeKrig; Nychka et al., 2015) is used to generate 5-km gridded analyses of sea level pressure (altimeter), every 5-minutes. These analyses are generated using [MADIS](https://madis.ncep.noaa.gov/madis_sfc.shtml) pressure observations, which include pressure observations from [METARs](https://madis.ncep.noaa.gov/madis_metar.shtml) and [Mesonets](https://madis.ncep.noaa.gov/madis_mesonet.shtml). To account for the temporal variability of MADIS observation density/frequency, Kalman smoothing is performed. Kalman smoothing transforms geo-spatial pressure analyses, generated with LatticeKrig, into spatio-temporal pressure analyses that are consistent in both space and time. 
 
@@ -8,7 +10,7 @@ The code provided in this repository demonstrates this methodology, wherein pres
 
 ### Setup
 Please read the **SETUP.txt** file before attempting to run the jupyter notebooks provided in this repository. This file contains
-instructions for setting up an R/Python conda environment containing the packages used in jupyter notebooks. In addition, please download the data.tar.gz available [here](https://drive.google.com/file/d/1q418t9YtHSTO01FbQH-eCprvaReaf2XU/view?usp=sharing). This archive contains data and analyses used in jupyter notebook examples.
+instructions for setting up an R/Python conda environment containing the packages used in jupyter notebooks. In addition, please download the data.tar.bz2 available [here](https://atmos.washington.edu/~cmcnich/emailout2/data.tar.bz2). This archive contains data and analyses used in jupyter notebook examples.
 
 ### Notes about MADIS:
 Additional observations, not available to the public, are provided to researchers by the Meteorological Data Assimilation Ingest System ([MADIS](https://madis.ncep.noaa.gov/)). In McNicholas and Mass (2021a; 2021b), MADIS Research observations were used to generate pressure analyses. The data archive contains pressure analyses generated with MADIS Research observations but not the raw data (i.e., point observations). MADIS Research observations cannot be redistributed since they contain Mesonet observations [prohibited](https://madis.ncep.noaa.gov/madis_restrictions.shtml) from redistribution. For this reason, point-observations in the data archive are limited to MADIS pressure observations approved for public release.
@@ -63,7 +65,7 @@ Additional observations, not available to the public, are provided to researcher
       - A comparison between smartphone and madis pressure feature climatologies is explored through stastical analysis of a 1-year pressure feature climatology spanning the central and eastern U.S.
       - The seasonal, diurnal, and geographic variation of surface pressure features is examined. Furthermore, their environment (with respect to precipitation/convection) and (phase and propagation) velocity is examined. 
 
-   - [*Composite and Wavelet Analysis*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/blob/master/notebooks/CaseStudies/CaseI/CaseI_MCS_Composite_and_Wavelet_Analysis.ipynb)
+   - [*Smartphone Feature Composites*](https://nbviewer.org/github/cmac994/meteo-krig/blob/master/notebooks/Results/Smartphone_Composites.ipynb)
       - An analysis of the temporal and spatial composites of smartphone pressure features is performed for both positive and negative features.
       - Phase relationships between mesoscale surface pressure perturbations and other surface variables (e.g. temperature, dew point, wind) are examined.
 
