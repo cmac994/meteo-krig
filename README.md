@@ -4,22 +4,22 @@
 
 This repository provides code and visualizations of methods/results from [McNicholas and Mass (2021a)](https://doi.org/10.1175/WAF-D-20-0222.1) and McNicholas and Mass (2021b; submitted). 
 
-In [McNicholas and Mass (2021a)](https://doi.org/10.1175/WAF-D-20-0222.1) multi-resolution kriging (LatticeKrig; Nychka et al., 2015) is used to generate 5-km gridded analyses of sea level pressure (altimeter), every 5-minutes. These analyses are generated using [MADIS](https://madis.ncep.noaa.gov/madis_sfc.shtml) pressure observations, which include pressure observations from [METARs](https://madis.ncep.noaa.gov/madis_metar.shtml) and [Mesonets](https://madis.ncep.noaa.gov/madis_mesonet.shtml). To account for the temporal variability of MADIS observation density/frequency, Kalman smoothing is performed. Kalman smoothing transforms geo-spatial pressure analyses, generated with LatticeKrig, into spatio-temporal pressure analyses that are consistent in both space and time. 
+In [McNicholas and Mass (2021)](https://doi.org/10.1175/WAF-D-20-0222.1) multi-resolution kriging (LatticeKrig; Nychka et al., 2015) is used to generate 5-km gridded analyses of sea level pressure (altimeter), every 5-minutes. These analyses are generated using [MADIS](https://madis.ncep.noaa.gov/madis_sfc.shtml) pressure observations, which include pressure observations from [METARs](https://madis.ncep.noaa.gov/madis_metar.shtml) and [Mesonets](https://madis.ncep.noaa.gov/madis_mesonet.shtml). To account for the temporal variability of MADIS observation density/frequency, Kalman smoothing is performed. Kalman smoothing transforms geo-spatial pressure analyses, generated with LatticeKrig, into spatio-temporal pressure analyses that are consistent in both space and time. 
 
-The code provided in this repository demonstrates this methodology, wherein pressure observations are analysed using LatticeKrig, smoothed using a Kalman Smoother, and band pass filtered to extract mesoscale pressure perturbations. In [McNicholas and Mass (2021a)](https://doi.org/10.1175/WAF-D-20-0222.1) this approach to pressure analyses is utilized for both MADIS and smartphone pressure observations. In McNicholas and Mass (2021b; submitted), this methodology is extended to MADIS temperature, moisture, and wind observations facilliting the analysis, tracking, and comparison of a climatology of mesoscale pressure features observed with smartphones and conventional (MADIS) observations.
+The code provided in this repository demonstrates this methodology, wherein pressure observations are analysed using LatticeKrig, smoothed using a Kalman Smoother, and band pass filtered to extract mesoscale pressure perturbations. In [McNicholas and Mass (2021)](https://doi.org/10.1175/WAF-D-20-0222.1) this approach to pressure analyses is utilized for both MADIS and smartphone pressure observations. In McNicholas and Mass (2022; In review), this methodology is extended to MADIS temperature, moisture, and wind observations facilliting the analysis, tracking, and comparison of a climatology of mesoscale pressure features observed with smartphones and conventional (MADIS) observations.
 
 ### Setup
 Please read the **SETUP.txt** file before attempting to run the jupyter notebooks provided in this repository. This file contains
 instructions for setting up an R/Python conda environment containing the packages used in jupyter notebooks. In addition, please download the data.tar.bz2 available [here](https://atmos.washington.edu/~cmcnich/emailout2/data.tar.bz2). This archive contains data and analyses used in jupyter notebook examples.
 
 ### Notes about MADIS:
-Additional observations, not available to the public, are provided to researchers by the Meteorological Data Assimilation Ingest System ([MADIS](https://madis.ncep.noaa.gov/)). In McNicholas and Mass (2021a; 2021b), MADIS Research observations were used to generate pressure analyses. The data archive contains pressure analyses generated with MADIS Research observations but not the raw data (i.e., point observations). MADIS Research observations cannot be redistributed since they contain Mesonet observations [prohibited](https://madis.ncep.noaa.gov/madis_restrictions.shtml) from redistribution. For this reason, point-observations in the data archive are limited to MADIS pressure observations approved for public release.
+Additional observations, not available to the public, are provided to researchers by the Meteorological Data Assimilation Ingest System ([MADIS](https://madis.ncep.noaa.gov/)). In McNicholas and Mass (2021; 2022), MADIS Research observations were used to generate pressure analyses. The data archive contains pressure analyses generated with MADIS Research observations but not the raw data (i.e., point observations). MADIS Research observations cannot be redistributed since they contain Mesonet observations [prohibited](https://madis.ncep.noaa.gov/madis_restrictions.shtml) from redistribution. For this reason, point-observations in the data archive are limited to MADIS pressure observations approved for public release.
 
 #### [Notebooks](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/)
 
 - [*Methodology*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/Methodology)
 
-   #### *Paper I: McNicholas and Mass (2021a)*
+   #### *Paper I: McNicholas and Mass (2021)*
 
    - [*Surface Analysis*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/Methodology/SurfaceAnalysis/)
       - [Kriging](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/Methodology/SurfaceAnalysis/Kriging/)   
@@ -38,7 +38,7 @@ Additional observations, not available to the public, are provided to researcher
          -  Demonstrates how mesoscale temperature, moisture, and wind perturbations are extracted from MADIS analyses using band-pass filtering. 
          -  Produces animations depicting the evolution of mesoscale perturbations associated with two high-impact weather events in the Mid-Atlantic region between 14-15 May 2018.
 
-   #### *Paper II: McNicholas and Mass (2021b)*
+   #### *Paper II: McNicholas and Mass (2022)*
    
    - [*Feature Tracking*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/Methodology/Feature_Tracking/)
       - [*Pressure_Perturbation_Analysis.ipynb*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/blob/master/notebooks/Methodology/Feature_Tracking/Pressure_Perturbation_Analysis.ipynb)
@@ -59,7 +59,7 @@ Additional observations, not available to the public, are provided to researcher
 
 - [*Results*](https://nbviewer.jupyter.org/github/cmac994/meteo-krig/tree/master/notebooks/CaseStudies/)
 
-   #### *Paper II: McNicholas and Mass (2021b)*  
+   #### *Paper II: McNicholas and Mass (2022)*  
 
    - [*Feature Climatology*](https://nbviewer.org/github/cmac994/meteo-krig/blob/master/notebooks/Results/FeatureClimatology.ipynb)
       - A comparison between smartphone and madis pressure feature climatologies is explored through stastical analysis of a 1-year pressure feature climatology spanning the central and eastern U.S.
