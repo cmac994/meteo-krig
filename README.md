@@ -10,7 +10,7 @@ The code provided in this repository demonstrates this methodology, wherein pres
 
 ### Setup
 Please read the **SETUP.txt** file before attempting to run the jupyter notebooks provided in this repository. This file contains
-instructions for setting up an R/Python conda environment containing the packages used in jupyter notebooks. In addition, please download the data.tar.bz2 available [here](https://atmos.washington.edu/~cmcnich/emailout2/data.tar.bz2). This archive contains data and analyses used in jupyter notebook examples.
+instructions for setting up an R/Python conda environment containing the packages used in jupyter notebooks. In addition, please download the data.tar.bz2 available [here](https://drive.google.com/file/d/1T-hNwqXu_CkmRFp5SpIGAu99KMXIOv0M/view?usp=sharing). This archive contains data and analyses used in jupyter notebook examples.
 
 ### Notes about MADIS:
 Additional observations, not available to the public, are provided to researchers by the Meteorological Data Assimilation Ingest System ([MADIS](https://madis.ncep.noaa.gov/)). In McNicholas and Mass ([2021](https://doi.org/10.1175/WAF-D-20-0222.1); [2022](https://doi.org/10.1175/WAF-D-21-0166.1)), MADIS Research observations were used to generate pressure analyses. The data archive contains pressure analyses generated with MADIS Research observations but not the raw data (i.e., point observations). MADIS Research observations cannot be redistributed since they contain Mesonet observations [prohibited](https://madis.ncep.noaa.gov/madis_restrictions.shtml) from redistribution. For this reason, point-observations in the data archive are limited to MADIS pressure observations approved for public release.
